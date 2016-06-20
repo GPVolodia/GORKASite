@@ -1,0 +1,182 @@
+/*----------------------------------------------------
+                 Devster - CSS File
+------------------------------------------------------*/
+
+
+/* Global
+------------------------------------------------------*/
+html,body{height:100%}
+body {
+	font-family:Tahoma, Arial, Verdana;
+	font-size:12px;
+	margin:0 auto;
+	padding:0;
+	color:#676767;
+	background-color:#f9fbf4;
+	height:100%;
+}
+* {
+	margin:0;
+	padding:0;
+}
+*:focus {
+	outline:none; /* removes ugly dotted border but may make template more unsuable, up to you
+					 if you want to keep it! */
+}
+.clr{clear:both}
+form{margin:0; padding:0;}
+
+
+/* Default Element Styles
+------------------------------------------------------*/
+/* heading */
+h1, h2, h3, h4, h5 {margin-bottom:10px; font-family:Tahoma, Arial, Verdana;	font-weight:normal;}
+h1 {color:#303030; font-size:34px;}
+h2 {color:#303030; font-size:24px;}
+h3 {color:#303030; font-size:18px;}
+h4 {color:#303030; font-size:16px;}
+h5 {font-size:12px; margin:3px 0px; padding:0px; font-weight:bold; letter-spacing:1px;}
+
+/* links */
+a {color:#676767;text-decoration:underline;}
+a:hover{text-decoration:underline;}
+a img{border:none;}
+
+/* lists, blockquotes and paragraphs */
+p, ul, ol, blockquote {
+	font-size:12px;
+	line-height:18px;
+	margin-bottom:20px;
+	color:#676767;
+}
+ul, ol {
+	margin:10px 0 35px 40px;
+}
+li ol,
+li ul
+{
+	font-size:1.0em;
+	list-style:square;
+	margin-bottom:0;
+	margin-top:0;
+}
+li ol {list-style:decimal;}
+blockquote {
+	margin:0px;	
+	padding-left:35px;
+	background-image:url(../images/quote.png);
+	background-position:0px 5px;
+	background-repeat:no-repeat;
+}
+
+/* code */
+code {
+	font-family:Tahoma, Arial, Verdana;
+	letter-spacing:1px;
+	margin:25px 0 25px 0px;
+	display:block;
+	font-size:0.9em;
+	border-left:4px solid #676767;
+	padding:15px 10px;
+}
+
+
+/* Container
+------------------------------------------------------*/
+#main_container{
+	background-image:url(../images/bg-top-container.jpg); 
+	background-repeat:repeat-x; 
+	min-height:90%; 
+}
+#bottom_container{background-image:url(../images/bg-bottom-container.gif); background-repeat:repeat-x; height:84px; margin:0px auto 0px auto; clear:left;}
+
+
+/* Frame
+------------------------------------------------------*/
+#frame{width:960px; margin:0px auto 0px auto; }
+
+
+/* Top
+------------------------------------------------------*/
+#top{height:46px;}
+#logo{width:255px; float:left;}
+#pad_logo{padding:9px 0px 0px 5px;}
+#topmenu{width:705px; float:left;}
+#rss {float:right;padding:15px 5px 0px 0px;}
+.rss-text {float:left; font-size:11px; padding-top:1px;}
+.rss-img {float:left; padding-left:5px; }
+.rss-text a {color:#676767;text-decoration:none;}
+#head-top {width:960px; height:25px; border-bottom:1px solid #71736b; padding-bottom:8px; margin:12px 0px 10px 0px; float:left;}
+#head-title h2 {width:630px; padding-bottom:3px; float:left;}
+
+/* Top Navigation bar menu styling */
+#nav {margin:0px; padding:12px 0px 0px 0px; float:right;}
+#nav ul li.last{background:none;}
+#nav ul{ 
+	padding:0;
+	margin:0;
+	width:auto;
+	list-style: none;
+	height:37px;
+	position: relative;
+	float:right;	
+}
+#nav li{
+	list-style:none;
+	float:left;
+	text-align:center;
+	padding:0;
+	font:normal 14px Tahoma;	
+	color:#ffffff;
+	background:url(../images/nav-divider.gif) no-repeat 100% 3px;
+}
+#nav li a {
+	z-index: 10;
+	display: block;
+	float: left;
+	height: 30px;
+	position: relative;
+	overflow: hidden;
+	margin: auto 20px;
+	color:#ffffff;
+	text-decoration:none;	
+}
+#nav li a:hover {
+	background: url(../images/lava.gif) no-repeat center 28px;
+	height:37px;		
+	color:#ffffff;
+}	
+#nav li .active {
+	background: url(../images/lava.gif) no-repeat center 28px;
+	height:37px;		
+	color:#ffffff;
+}	
+#nav a:link{color:green; text-decoration:underline;}	
+#nav a:hover{color:green; text-decoration:underline;}	
+#nav a:active{color:#ffffff; text-decoration:none;}
+
+
+/* Content
+------------------------------------------------------*/
+.imgleft{float:left; padding-right:15px;}
+.imgright{float:right; padding-left:15px;}
+.imgleft-box{float:left; border:solid 1px #cfd4c3; padding:6px; margin-right:15px; background-color:#f9fbf4;}
+.imgright-box{float:right; border:solid 1px #cfd4c3; padding:6px; margin-left:15px; background-color:#f9fbf4;}
+#content1{float:left; width:300px;}
+#content2{float:left; width:300px; margin-left:30px;}
+#content3{float:left; width:300px; margin-left:30px;}
+.map{border:solid 1px #dadada; padding:6px; margin:0px; background-color:#fbfbfb;}
+.newsfeed{float:right; margin-top:4px; margin-right:4px;}
+.maincontent h3 {border-bottom:1px solid #71736b; padding-bottom:3px;}
+.brochure{margin-top:30px;}
+
+
+/* Footer
+------------------------------------------------------*/
+#footer{width:960px; margin:0px auto 0px auto; color:#787773; clear:both;}
+#foot{padding:13px 0px 0px 0px; font-size:11px; line-height:18px; float:left;}
+#foot a, #foot a:visited{color:#787773; text-decoration:none;}
+#foot a:hover{text-decoration:underline;}
+.left-foot{width:504px; float:left;}
+.right-foot{ background-image:url(../images/twitter-bg.jpg); background-repeat:no-repeat; width:456px; height:34px; margin-top:10px; float:left;}
+.twitter-code{width:400px; margin-top:7px; margin-left:8px; text-align:center; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}

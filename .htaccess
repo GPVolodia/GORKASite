@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+
+php_flag display_errors off
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule .* index.php [L]
+
+
